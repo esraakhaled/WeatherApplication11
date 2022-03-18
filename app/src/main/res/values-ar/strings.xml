@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main">
+        <item>مطر</item>
+        <item>رياح</item>
+        <item>ضباب</item>
+        <item>ثلج</item>
+        <item>سحاب</item>
+        <item>رعد</item>
+        <item>صافي</item>
+        <item>رذاذ</item>
+        <item>غبار</item>
+        <item>شبورة</item>
+    </string-array>
+    <string name="app_name">الطقس</string>
+    <string name="hello_blank_fragment">weatherFragment</string>
+    <string name="feels">شعور</string>
+    <string name="sunset">غروب</string>
+    <string name="sunrise">شروق</string>
+    <string name="location_mode">وضع الموقع</string>
+    <string name="gps">GPS</string>
+    <string name="location">الموقع</string>
+    <string name="address" >العنوان</string>
+    <string name="latitude" >خط العرض</string>
+    <string name="longtuide" >خط الطول</string>
+    <string name="temperature_unit" >درجة الحرارة</string>
+    <string name="c" >س°</string>
+    <string name="wind_speed" >سرعة الرياح</string>
+    <string name="km_h" >كم/س</string>
+    <string name="language" >اللغة</string>
+    <string name="arabic">العربية</string>
+    <string name="english" >الانجليزية</string>
+    <string name="please_long_click_to_select_your_location" >من فضلك, اضغط لتحديد موقعك</string>
+    <string name="max_temp" >اقصي درجة حرارة:</string>
+    <string name="min_temp" >اقل درجةحرارة:</string>
+    <string name="visibility">الرؤية</string>
+    <string name="pressure" >الضغط</string>
+    <string name="humidity" >الرطوبة</string>
+    <string name="wind">رياح</string>
+    <string name="desc">الوصف:</string>
+    <string name="event">الحدث:</string>
+    <string name="favourite">المفضلة</string>
+    <string name="_48_hours">48 ساعة</string>
+    <string name="notification">ملاحظة</string>
+    <string name="alarm">منبه</string>
+    <string name="date">التاريخ:</string>
+    <string name="time">الوقت:</string>
+    <string name="m_s">م/ث</string>
+    <string name="f">ف°</string>
+    <string name="please_go_to_settings_to_select_your_location">من فضلك, اذهب الي الاعدادات لتحديد موقعك. </string>
+    <string name="hello">مرحبا</string>
+    <string name="to">الي:</string>
+    <string name="from">من:</string>
+    <string name="toastLoc">"من فضلك, ادخل موقعك."</string>
+    <string name="error">"خطأ"</string>
+    <string name="permission">"لم تتمكن من تحديد موقعك!! الاذن مطلوب."</string>
+
+    <string name="favMsg">هل تريد حذف هذا؟؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="alert">هل تريد حذف المنبه؟؟</string>
+    <string name="alarmDone">المنبه تم.</string>
+    <string name="invalidDorT">الوقت والتاريخ غير صالحين.</string>
+    <string name="dialogAlarm">لم توجد بيانات</string>
+    <string name="weather">الطقس</string>
+    <string name="_7day">7 اياام</string>
+    <string name="alarmNav">المنبه</string>
+    <string name="favouriteNav">المفضلة</string>
+    <string name="setting">الاعدادات</string>
+
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/weather_nav"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+        <fragment
+            android:id="@+id/homeFragment"
+            android:name="eg.iti.weather_app.view.fragments.home.HomeWeather"
+            android:label="fragment_home_weather"
+            tools:layout="@layout/fragment_home_weather" />
+        <fragment
+            android:id="@+id/sevenDayFragment"
+            android:name="eg.iti.weather_app.view.fragments.seven_days.Seven_days_Fragment"
+            android:label="fragment_seven_day_weather"
+            tools:layout="@layout/fragment_seven_days_" >
+
+        </fragment>
+        <fragment
+            android:id="@+id/alertsFragment"
+            android:name="eg.iti.weather_app.view.fragments.alarm.AlarmFragment"
+            android:label="AlertsFragment" />
+        <fragment
+            android:id="@+id/favouriteFragment"
+            android:name="eg.iti.weather_app.view.fragments.favourite.FavouriteWeather"
+            android:label="fragment_favourite_weather"
+            tools:layout="@layout/fragment_favourite_weather" />
+        <fragment
+            android:id="@+id/settingFragment"
+            android:name="eg.iti.weather_app.view.fragments.mapFragment.SettingWeather"
+            android:label="fragment_setting_weather"
+            tools:layout="@layout/fragment_setting_weather" >
+            <action
+                android:id="@+id/action_settingFragment_to_mapsFragment"
+                app:destination="@id/mapsFragment"
+                app:enterAnim="@anim/fragment_fade_enter"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"
+                app:popEnterAnim="@animator/nav_default_pop_enter_anim"/>
+        </fragment>
+        <fragment
+            android:id="@+id/mapsFragment"
+            android:name="eg.iti.weather_app.view.fragments.mapFragment.MapsFragment"
+            android:label="fragment_maps"
+            tools:layout="@layout/fragment_maps" />
+    </navigation>
+

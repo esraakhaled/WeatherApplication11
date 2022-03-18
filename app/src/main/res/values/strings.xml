@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Weather_app</string>
+    <string-array name="main">
+        <item>Rain</item>
+        <item>Wind</item>
+        <item>Fog</item>
+        <item>Snow</item>
+        <item>Clouds</item>
+        <item>Thunderstorm</item>
+        <item>Clear</item>
+        <item>Drizzle</item>
+        <item>Dust</item>
+        <item>Mist</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">weatherFragment</string>
+    <string name="feels">Feels</string>
+    <string name="sunset">Sunset</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="location_mode">Location mode</string>
+    <string name="gps">GPS</string>
+    <string name="location">Location</string>
+    <string name="address">Address</string>
+    <string name="latitude">Latitude</string>
+    <string name="longtuide">Longtuide</string>
+    <string name="temperature_unit">Temperature unit</string>
+    <string name="c">°C</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="km_h">Km/h</string>
+    <string name="language">Language</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="please_long_click_to_select_your_location">please, Long click to select your location</string>
+    <string name="max_temp">Max Temp:</string>
+    <string name="min_temp">Min Temp:</string>
+    <string name="visibility">Visibility</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="desc">Description:</string>
+    <string name="event">Event:</string>
+    <string name="favourite">Favourite</string>
+    <string name="_48_hours">48 Hours</string>
+    <string name="notification">notification</string>
+    <string name="alarm">alarm</string>
+    <string name="date">Date:</string>
+    <string name="m_s">m/s</string>
+    <string name="f">°F</string>
+    <string name="please_go_to_settings_to_select_your_location">Please, Go to Settings to select your location.</string>
+    <string name="hello">Hello</string>
+    <string name="time">Time:</string>
+    <string name="to">To:</string>
+    <string name="from">From:</string>
+
+    <string name="toastLoc">please, Enter Your Location</string>
+    <string name="error">Error!!</string>
+    <string name="permission">Unable to show location - permission required</string>
+    <string name="favMsg">Do You Want to Delete this Favourite ?!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="alert">Do You Want to Delete this Alert ?!</string>
+    <string name="alarmDone">Alarm is done!</string>
+    <string name="invalidDorT">Invalide Date or Time</string>
+    <string name="dialogAlarm">no data</string>
+    <string name="weather">Weather</string>
+    <string name="_7day">7Day</string>
+    <string name="alarmNav">Alarm</string>
+    <string name="favouriteNav">Favourite</string>
+    <string name="setting">Setting</string>
+    <string name="google_maps_key">AIzaSyCf08-Sp3nVsq2VMOuCKN1wwoDVnfm8HCg</string>
+</resources>

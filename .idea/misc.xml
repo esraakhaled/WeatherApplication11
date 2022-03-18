@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_cloudly_weather.xml" value="0.1" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_dial.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_dialo2.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_dialogue.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_foggy_weather.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_rainy_weather.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_snowy_weather.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_sunny_weather.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/button.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/close_btn.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_01d.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_01n.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_02d.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_02n.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_03d.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_03n.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_04d.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_04n.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_09d.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_09n.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_10n.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_13n.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_50d.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_50n.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_add_alert.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_add_location.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_alarm.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_alarm_clock.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_all_news.xml" value="0.1" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_baseline_sync_24.xml" value="0.1" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_breaking_news.xml" value="0.1" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_cat.xml" value="0.1" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_cloud.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_date.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_dayss.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_fav.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_favorite.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_favorite2.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_humidity.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_language.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_loc2.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_location.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_man.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_notification.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_one_day.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_plus1.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_pressure.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_settings.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_sun.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_sunrise.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_sunset.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_temperature.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_time.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_visibility.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_wave.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_weatherloc.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/ic_wind.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/underline_item_layout.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1135" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout-land/fragment_home_weather.xml" value="0.1" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout-land/fragment_setting_weather.xml" value="0.19322916666666667" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/activity_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/activity_weather.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/alert_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/dialog_custom_alarm.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/favourite_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/forecast_weather_hourly_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/fragment_alert.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/fragment_favourite_weather.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/fragment_home_weather.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/fragment_maps.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/fragment_setting_weather.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/fragment_seven_days_.xml" value="0.25" />
+        <entry key="..\:/Weather_app/app/src/main/res/layout/seven_day_card.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/menu/bottom_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Weather_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Weather_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.20416666666666666" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
