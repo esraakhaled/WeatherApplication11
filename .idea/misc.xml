@@ -6,7 +6,11 @@
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_add_alert.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_alarm.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout-land/fragment_home_weather.xml" value="0.19322916666666667" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/activity_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/alert_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/dialog_custom_alarm.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/fragment_alert.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/fragment_home_weather.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/seven_day_card.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/menu/bottom_menu.xml" value="0.20416666666666666" />
