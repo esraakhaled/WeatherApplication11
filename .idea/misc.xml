@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_add_alert.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_alarm.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout-land/fragment_home_weather.xml" value="0.19322916666666667" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/fragment_home_weather.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/seven_day_card.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/menu/bottom_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_cloudly_weather.xml" value="0.1" />
         <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_dial.xml" value="0.1135" />
         <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_dialo2.xml" value="0.1135" />

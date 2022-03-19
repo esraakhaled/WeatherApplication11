@@ -30,7 +30,6 @@ import eg.iti.weather_app.utils.timeConverter
 import eg.iti.weather_app.viewmodel.SettingViewModel
 import eg.iti.weather_app.viewmodel.WeatherViewModel
 import androidx.lifecycle.Observer
-import eg.iti.weather_app.receiver.AlReciever
 
 import java.util.*
 
@@ -46,7 +45,6 @@ class HomeWeather : Fragment(R.layout.fragment_home_weather) {
     lateinit var sp: SharedPreferences
     var values: String = ""
     lateinit var calendar : Calendar
-    lateinit var alarmManager:AlarmManager
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -54,7 +52,6 @@ class HomeWeather : Fragment(R.layout.fragment_home_weather) {
         savedInstanceState: Bundle?,
     ): View? {
 
-        alarmManager = requireActivity().getSystemService(Context.ALARM_SERVICE) as AlarmManager
         calendar = Calendar.getInstance()
 
         weatherViewModel = ViewModelProvider(this).get(WeatherViewModel::class.java)
@@ -94,22 +91,6 @@ class HomeWeather : Fragment(R.layout.fragment_home_weather) {
             when (it) {
                 is Resource.Success -> {
                     binding.mainContainer.visibility = View.VISIBLE
-
-                    if(it.data!!.alerts!=null){
-                        it.data!!.alerts?.let { it1 ->
-                            for(item in it1)
-                                values = values+item.event+ " from "+weatherViewModel
-                                    .getDateTime(item.start.toString(),"dd-MM-yyyy  hh:mm a")+" to "+
-                                        weatherViewModel.getDateTime(item.end.toString(),"dd-MM-yyyy  hh:mm a")+"\n"
-                            setAlertNotification(calendar.timeInMillis, values, it1.get(0).description!!)
-                        }
-                    }
-//                    else{
-//
-//                        setAlertNotification(calendar.timeInMillis, values, "no")
-//
-//
-//                    }
                     it.data?.let {
                         displayDailyWeatherToRecycleView(it.hourly)
                         displayCurrentWeatherToCard(it)
@@ -188,25 +169,6 @@ class HomeWeather : Fragment(R.layout.fragment_home_weather) {
     private fun hideProgressBar() {
         binding.progressBar.visibility = View.INVISIBLE
     }
-
-
-
-
-    @RequiresApi(Build.VERSION_CODES.KITKAT)
-    fun setAlertNotification(st: Long, event: String, description: String, ) {
-        val intentAlertReciever = Intent(context, AlReciever::class.java)
-        intentAlertReciever.putExtra("event", event)
-        intentAlertReciever.putExtra("desc", description)
-        val random = Random()
-        val requestCode = random.nextInt(99)
-        val pendingIntentAlertReciever =
-            PendingIntent.getBroadcast(context, requestCode, intentAlertReciever, 0)
-        val calendar = Calendar.getInstance().timeInMillis
-        alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar, pendingIntentAlertReciever)
-        requireActivity().registerReceiver(AlReciever(), IntentFilter())
-
-    }
-
 
 }
 

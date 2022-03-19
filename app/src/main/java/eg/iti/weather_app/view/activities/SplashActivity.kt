@@ -6,6 +6,7 @@ import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import eg.iti.weather_app.R
 import eg.iti.weather_app.databinding.ActivitySplashBinding
+import kotlinx.android.synthetic.main.activity_splash.*
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -19,17 +20,11 @@ class SplashActivity : AppCompatActivity() {
         binding =ActivitySplashBinding.inflate(layoutInflater)
             setContentView(binding.root)
 
-        GlobalScope.launch {
-
-            var animCloud = AnimationUtils.loadAnimation(this@SplashActivity, R.anim.splash_cloud)
-            var animSun = AnimationUtils.loadAnimation(this@SplashActivity, R.anim.splash_sun)
-
-            binding.imgSplashCloud.animation = animCloud
-            binding.imgSplashSun.animation = animSun
-
-            delay(3000)
+        rain.alpha=0f
+        rain.animate().setDuration(2000).alpha(1f).withEndAction {
             var intent = Intent(this@SplashActivity, WeatherActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
             finish()
         }
 

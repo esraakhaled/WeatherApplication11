@@ -8,9 +8,9 @@
         android:title="@string/_7day"
         android:icon="@drawable/ic_date" />
 
-    <item android:id="@+id/alertsFragment"
+    <!--<item android:id="@+id/alertsFragment"
         android:title="@string/alarmNav"
-        android:icon="@drawable/ic_add_alert" />
+        android:icon="@drawable/ic_add_alert" />-->
 
     <item android:id="@+id/favouriteFragment"
         android:title="@string/favourite"

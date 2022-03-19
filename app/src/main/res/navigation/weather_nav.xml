@@ -16,10 +16,10 @@
             tools:layout="@layout/fragment_seven_days_" >
 
         </fragment>
-        <fragment
+        <!--<fragment
             android:id="@+id/alertsFragment"
             android:name="eg.iti.weather_app.view.fragments.alarm.AlarmFragment"
-            android:label="AlertsFragment" />
+            android:label="AlertsFragment" />-->
         <fragment
             android:id="@+id/favouriteFragment"
             android:name="eg.iti.weather_app.view.fragments.favourite.FavouriteWeather"
