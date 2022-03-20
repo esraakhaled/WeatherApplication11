@@ -10,8 +10,9 @@ import eg.iti.weather_app.db.entity.FavouriteData
 import eg.iti.weather_app.db.entity.Weather_Response
 
 @Database(
-    entities = [Weather_Response::class, FavouriteData::class,  AlarmEntity::class],
-    version = 5)
+    entities = [Weather_Response::class, FavouriteData::class, AlarmEntity::class],
+    version = 5
+)
 @TypeConverters(TypeConverterDatabase::class)
 abstract class WeatherDatabase : RoomDatabase() {
 
@@ -33,7 +34,8 @@ abstract class WeatherDatabase : RoomDatabase() {
             Room.databaseBuilder(
                 context.applicationContext,
                 WeatherDatabase::class.java,
-                "my_weather").build()
+                "my_weather"
+            ).build()
 
     }
 

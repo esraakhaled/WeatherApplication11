@@ -16,7 +16,11 @@ import eg.iti.weather_app.databinding.FragmentAlertBinding
 class AlarmFragment : Fragment(R.layout.fragment_alert) {
 
     lateinit var binding: FragmentAlertBinding
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?, ): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View? {
 
         binding = FragmentAlertBinding.inflate(layoutInflater)
         return binding.root

@@ -17,14 +17,13 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding =ActivitySplashBinding.inflate(layoutInflater)
-            setContentView(binding.root)
-
-        rain.alpha=0f
-        rain.animate().setDuration(2000).alpha(1f).withEndAction {
+        binding = ActivitySplashBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        rain.alpha = 0f
+        rain.animate().setDuration(3000).alpha(1f).withEndAction {
             var intent = Intent(this@SplashActivity, WeatherActivity::class.java)
             startActivity(intent)
-            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             finish()
         }
 

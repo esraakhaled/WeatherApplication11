@@ -8,12 +8,12 @@ import eg.iti.weather_app.db.model.Daily
 @Entity(tableName = "favouriteData")
 
 data class FavouriteData(
-@PrimaryKey(autoGenerate = true)
-val id : Int,
-@SerializedName("lat")
-val lat: Double,
-@SerializedName("lon")
-val lon: Double,
-@SerializedName("daily")
-val daily: List<Daily>
+    @PrimaryKey(autoGenerate = true)
+    val id: Int,
+    @SerializedName("lat")
+    val lat: Double,
+    @SerializedName("lon")
+    val lon: Double,
+    @SerializedName("daily")
+    val daily: List<Daily>
 )

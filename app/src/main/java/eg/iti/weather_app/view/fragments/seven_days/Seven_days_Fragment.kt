@@ -45,7 +45,7 @@ class Seven_days_Fragment : Fragment(R.layout.fragment_seven_days_) {
             binding.tvCountry.text = it.toString()
         })
         repo = Repository()
-        binding =  FragmentSevenDaysBinding.inflate(layoutInflater)
+        binding = FragmentSevenDaysBinding.inflate(layoutInflater)
         val root = binding.root
         binding.recyclerViewDaily.isEnabled = false
         context?.let { weatherViewModel.getWeatherAPIData(it) }
@@ -69,7 +69,7 @@ class Seven_days_Fragment : Fragment(R.layout.fragment_seven_days_) {
         binding.tvCountry.text = sp.getString("address", "")
 
         weatherViewModel.checkRoom.observe(viewLifecycleOwner, Observer {
-            if (it == true){
+            if (it == true) {
                 binding.cardSeven.visibility = View.VISIBLE
             }
         })

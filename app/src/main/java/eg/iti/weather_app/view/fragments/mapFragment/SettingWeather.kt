@@ -42,7 +42,7 @@ class SettingWeather : Fragment(R.layout.fragment_setting_weather) {
     ):
             View? {
 
-        sp= PreferenceManager.getDefaultSharedPreferences(context)
+        sp = PreferenceManager.getDefaultSharedPreferences(context)
         weatherViewModel = ViewModelProvider(this).get(WeatherViewModel::class.java)
         favViewModel = ViewModelProvider(this).get(FavViewModel::class.java)
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(context)
@@ -51,9 +51,11 @@ class SettingWeather : Fragment(R.layout.fragment_setting_weather) {
         binding = FragmentSettingWeatherBinding.inflate(layoutInflater)
 
         context?.let {
-            model.writeDataWeatherInSharedPreference(model.getLatData().value.toString(),
+            model.writeDataWeatherInSharedPreference(
+                model.getLatData().value.toString(),
                 model.getLonData().value.toString(), model.getAddressData().value.toString(),
-                it)
+                it
+            )
         }
 
 
@@ -83,18 +85,50 @@ class SettingWeather : Fragment(R.layout.fragment_setting_weather) {
 
         binding.groubTemp.setOnCheckedChangeListener { group, checkedId ->
             if (checkedId == R.id.btnCelicious) {
-                context?.let { model.writeTempDegreeInSharedPreference("metric", "°C","metric","m/s", it) }
+                context?.let {
+                    model.writeTempDegreeInSharedPreference(
+                        "metric",
+                        "°C",
+                        "metric",
+                        "m/s",
+                        it
+                    )
+                }
             } else if (checkedId == R.id.btnKelven) {
-                context?.let { model.writeTempDegreeInSharedPreference("imperial", "°F","imperial","Km/h", it) }
+                context?.let {
+                    model.writeTempDegreeInSharedPreference(
+                        "imperial",
+                        "°F",
+                        "imperial",
+                        "Km/h",
+                        it
+                    )
+                }
 
             }
         }
 
         binding.groubWind.setOnCheckedChangeListener { group, checkedId ->
             if (checkedId == R.id.btnMs) {
-                context?.let { model.writeTempDegreeInSharedPreference("metric", "°C","metric","m/s", it) }
+                context?.let {
+                    model.writeTempDegreeInSharedPreference(
+                        "metric",
+                        "°C",
+                        "metric",
+                        "m/s",
+                        it
+                    )
+                }
             } else if (checkedId == R.id.btnKmh) {
-                context?.let { model.writeTempDegreeInSharedPreference("imperial", "°F","imperial","Km/h", it) }
+                context?.let {
+                    model.writeTempDegreeInSharedPreference(
+                        "imperial",
+                        "°F",
+                        "imperial",
+                        "Km/h",
+                        it
+                    )
+                }
             }
         }
 
@@ -115,11 +149,13 @@ class SettingWeather : Fragment(R.layout.fragment_setting_weather) {
             } else {
 
                 context?.let {
-                    weatherViewModel.getWeatherAPIData(it,
-                        sp.getString("lat","").toString(),
-                        sp.getString("lon","").toString(),
+                    weatherViewModel.getWeatherAPIData(
+                        it,
+                        sp.getString("lat", "").toString(),
+                        sp.getString("lon", "").toString(),
                         model.getTempData().value.toString(),
-                        model.getLanguageData().value.toString())
+                        model.getLanguageData().value.toString()
+                    )
                 }
                 weatherViewModel.weatherLiveData.observe(viewLifecycleOwner, Observer {
                     when (it) {
@@ -136,14 +172,16 @@ class SettingWeather : Fragment(R.layout.fragment_setting_weather) {
         }
 
         binding.checkFav.setOnCheckedChangeListener { buttonView, isChecked ->
-            if(isChecked){
+            if (isChecked) {
 
                 context?.let {
-                    favViewModel.getFavAPIData(it,
-                        sp.getString("lat","").toString(),
-                        sp.getString("lon","").toString(),
+                    favViewModel.getFavAPIData(
+                        it,
+                        sp.getString("lat", "").toString(),
+                        sp.getString("lon", "").toString(),
                         model.getTempData().value.toString(),
-                        model.getLanguageData().value.toString())
+                        model.getLanguageData().value.toString()
+                    )
                 }
                 favViewModel.favLiveData.observe(viewLifecycleOwner, Observer {
                     when (it) {
@@ -169,12 +207,15 @@ class SettingWeather : Fragment(R.layout.fragment_setting_weather) {
     @SuppressLint("MissingPermission")
     fun getLastKnownLocation() {
         if (context?.let {
-                ActivityCompat.checkSelfPermission(it,
-                    Manifest.permission.ACCESS_FINE_LOCATION)
+                ActivityCompat.checkSelfPermission(
+                    it,
+                    Manifest.permission.ACCESS_FINE_LOCATION
+                )
             } != PackageManager.PERMISSION_GRANTED && context?.let {
                 ActivityCompat.checkSelfPermission(
                     it,
-                    Manifest.permission.ACCESS_COARSE_LOCATION)
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+                )
             } != PackageManager.PERMISSION_GRANTED
         ) {
 

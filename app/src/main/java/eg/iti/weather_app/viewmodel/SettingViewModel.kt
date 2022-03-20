@@ -7,7 +7,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.preference.PreferenceManager
 
-class SettingViewModel (application: Application) : AndroidViewModel(application) {
+class SettingViewModel(application: Application) : AndroidViewModel(application) {
     lateinit var SP: SharedPreferences
     val addressLiveData = MutableLiveData<String?>()
     val latLiveData = MutableLiveData<Double>()
@@ -70,7 +70,13 @@ class SettingViewModel (application: Application) : AndroidViewModel(application
         editor.commit()
     }
 
-    fun writeTempDegreeInSharedPreference(tempDegree: String, status: String,windDegree:String,degree:String, context: Context) {
+    fun writeTempDegreeInSharedPreference(
+        tempDegree: String,
+        status: String,
+        windDegree: String,
+        degree: String,
+        context: Context
+    ) {
         SP = PreferenceManager.getDefaultSharedPreferences(context)
         var editor = SP.edit()
         editor.putString("temp", tempDegree)

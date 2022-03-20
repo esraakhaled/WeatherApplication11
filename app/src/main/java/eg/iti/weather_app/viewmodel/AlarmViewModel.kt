@@ -13,18 +13,18 @@ import eg.iti.weather_app.db.entity.Weather_Response
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class AlarmViewModel (application: Application) : AndroidViewModel(application) {
+class AlarmViewModel(application: Application) : AndroidViewModel(application) {
     private var repo: Repository
 
     val weatherFromRoomLiveData = MutableLiveData<Resource<Weather_Response>>()
+
     init {
         repo = Repository()
 
     }
 
 
-
-    fun getWeatherFromRoom(){
+    fun getWeatherFromRoom() {
         viewModelScope.launch(Dispatchers.IO) {
             val result = repo.getWeatherFromRoom(getApplication())
             weatherFromRoomLiveData.postValue(handleGetWeatherFromRoom(result)!!)
@@ -37,8 +37,6 @@ class AlarmViewModel (application: Application) : AndroidViewModel(application) 
         }
         return Resource.Error("Room is empty")
     }
-
-
 
 
     suspend fun addAlarm(alertDatabase: AlarmEntity, context: Context) {

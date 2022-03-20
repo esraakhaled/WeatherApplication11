@@ -1,19 +1,12 @@
 package eg.iti.weather_app.view.fragments.home
 
 import android.annotation.SuppressLint
-import android.app.AlarmManager
-import android.app.PendingIntent
-import android.content.Context
-import android.content.Intent
-import android.content.IntentFilter
 import android.content.SharedPreferences
-import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.RequiresApi
 import androidx.lifecycle.ViewModelProvider
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,6 +23,9 @@ import eg.iti.weather_app.utils.timeConverter
 import eg.iti.weather_app.viewmodel.SettingViewModel
 import eg.iti.weather_app.viewmodel.WeatherViewModel
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
+import kotlinx.android.synthetic.main.activity_weather.*
 
 import java.util.*
 
@@ -44,7 +40,7 @@ class HomeWeather : Fragment(R.layout.fragment_home_weather) {
     private lateinit var editor: SharedPreferences.Editor
     lateinit var sp: SharedPreferences
     var values: String = ""
-    lateinit var calendar : Calendar
+    lateinit var calendar: Calendar
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -82,7 +78,7 @@ class HomeWeather : Fragment(R.layout.fragment_home_weather) {
         })
 
         weatherViewModel.checkRoom.observe(viewLifecycleOwner, Observer {
-            if (it == true){
+            if (it == true) {
                 binding.cardHello.visibility = View.VISIBLE
             }
         })
@@ -109,7 +105,7 @@ class HomeWeather : Fragment(R.layout.fragment_home_weather) {
         sp = PreferenceManager.getDefaultSharedPreferences(context)
         binding.tvAddress.text = sp.getString("address", "")
         binding.textCelcius.text = sp.getString("cel", "")
-        binding.textWind.text= sp.getString("km","")
+        binding.textWind.text = sp.getString("km", "")
 
 
         return root

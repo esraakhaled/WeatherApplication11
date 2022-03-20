@@ -9,9 +9,11 @@ import eg.iti.weather_app.db.local.WeatherDatabase
 import eg.iti.weather_app.db.remotely.RetrofitInstance
 
 class Repository {
-    public suspend fun retrofitWeatherCall(lat:String, lon:String,
-                                           units:String="metric", long:String="en") =
-        RetrofitInstance.api.getWeatherData(lat,lon,units,long)
+    public suspend fun retrofitWeatherCall(
+        lat: String, lon: String,
+        units: String = "metric", long: String = "en"
+    ) =
+        RetrofitInstance.api.getWeatherData(lat, lon, units, long)
 
     public suspend fun insertWeatherToRoom(context: Context, weather: Weather_Response) {
         WeatherDatabase.getInstance(context).getWeatherDao().upsert(weather)
@@ -23,10 +25,11 @@ class Repository {
     /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
-    public suspend fun retrofitFavCall(lat:String, lon:String,
-                                       units:String="metric", long:String="ar")=
-        RetrofitInstance.api.getFavData(lat,lon,units,long)
+    public suspend fun retrofitFavCall(
+        lat: String, lon: String,
+        units: String = "metric", long: String = "ar"
+    ) =
+        RetrofitInstance.api.getFavData(lat, lon, units, long)
 
     public suspend fun insertFavWeatherToRoom(context: Context, weather: FavouriteData) {
         WeatherDatabase.getInstance(context).getWeatherDao().insertFavWeatherData(weather)

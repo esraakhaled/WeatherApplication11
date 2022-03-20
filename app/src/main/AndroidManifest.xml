@@ -39,34 +39,15 @@
         -->
 
 
-        <activity
-            android:name=".view.activities.WeatherActivity"
-            />
-        <activity
-            android:name=".view.activities.DialogActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.Dialog"
-            android:launchMode="singleTop"
-           />
-        <receiver
-            android:name=".receiver.DialogReceiver"
-            android:enabled="true"
-            android:exported="true"
-             />
-        <receiver
-            android:name=".receiver.AlertReceiver"
-            android:enabled="true"
-            android:exported="true" />
-        <receiver
-            android:name=".receiver.AlReciever"
-            android:enabled="true"
-            android:exported="true" />
+        <activity android:name=".view.activities.WeatherActivity" />
+
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCf08-Sp3nVsq2VMOuCKN1wwoDVnfm8HCg" />
         <activity
             android:name=".view.activities.SplashActivity"
-            android:exported="true"
-            >
+            android:exported="true">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

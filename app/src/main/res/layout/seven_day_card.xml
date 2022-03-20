@@ -27,26 +27,26 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
-                android:backgroundTint="#28C3B6BE"
-                android:background="@drawable/underline_item_layout"
                 android:layout_width="match_parent"
-                android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:padding="3dp"
-                android:layout_margin="8dp">
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/underline_item_layout"
+                android:backgroundTint="#28C3B6BE"
+                android:padding="3dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_gravity="center"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:orientation="horizontal"
-                    android:weightSum="3"
-                    android:layout_height="wrap_content">
+                    android:weightSum="3">
 
                     <TextView
-                        android:layout_marginStart="8dp"
                         android:id="@+id/tvForecastState"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
                         android:hint="WEATHER"
                         android:textStyle="bold"
                         app:layout_constraintStart_toStartOf="parent"
@@ -56,9 +56,9 @@
                         android:id="@+id/imgForecastItem"
                         android:layout_width="45dp"
                         android:layout_height="45dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginEnd="10dp"
                         android:layout_marginBottom="8dp"
-                        android:layout_marginTop="8dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -67,13 +67,13 @@
                         android:id="@+id/tvForecastTemp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:textStyle="bold"
                         android:layout_marginTop="8dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginBottom="8dp"
                         android:hint="555"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/tvForecastState"
-                        app:layout_constraintTop_toBottomOf="@id/tvForecastState"/>
+                        app:layout_constraintTop_toBottomOf="@id/tvForecastState" />
 
 
                     <TextView
@@ -83,8 +83,8 @@
                         android:text="@string/c"
                         android:textSize="8sp"
                         android:textStyle="bold"
-                        app:layout_constraintTop_toTopOf="@+id/tvForecastTemp"
-                        app:layout_constraintStart_toEndOf="@+id/tvForecastTemp"/>
+                        app:layout_constraintStart_toEndOf="@+id/tvForecastTemp"
+                        app:layout_constraintTop_toTopOf="@+id/tvForecastTemp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -94,32 +94,33 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:layout_margin="2dp">
+            android:layout_margin="2dp"
+            android:padding="3dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:weightSum="3"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:weightSum="3">
 
                     <LinearLayout
-                        android:layout_weight="1"
-                        android:orientation="vertical"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textForecastHumidity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:textSize="8dp"
-                            android:text="@string/humidity" />
+                            android:text="@string/humidity"
+                            android:textSize="8dp" />
 
                         <ImageView
                             android:id="@+id/imgForecastHumidty"
@@ -129,9 +130,9 @@
                             android:src="@drawable/ic_humidity" />
 
                         <LinearLayout
-                            android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:gravity="center"
                             android:orientation="horizontal">
 
@@ -148,47 +149,47 @@
                                 android:layout_height="9dp"
                                 android:text="%"
                                 android:textSize="8sp"
-                                android:textStyle="bold"/>
+                                android:textStyle="bold" />
                         </LinearLayout>
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_weight="1"
-                        android:orientation="vertical"
                         android:layout_width="0dp"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textForecastPressure"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:text="@string/pressure"
-                            android:textSize="8dp"
-                            android:layout_gravity="center"/>
+                            android:textSize="8dp" />
 
                         <ImageView
                             android:id="@+id/imgForecastPressure"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/ic_pressure"
-                            android:layout_gravity="center" />
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_pressure" />
 
                         <TextView
                             android:id="@+id/tvForecastPressure"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textStyle="bold"
                             android:layout_gravity="center"
-                            android:hint="888" />
+                            android:hint="888"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_weight="1"
-                        android:orientation="vertical"
                         android:layout_width="0dp"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_height="match_parent">
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textForecastWind"
@@ -202,8 +203,8 @@
                             android:id="@+id/imgForecastWind"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/ic_wind"
-                            android:layout_gravity="center" />
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_wind" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -215,16 +216,16 @@
                                 android:id="@+id/tvForecastWind"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textStyle="bold"
-                                android:hint="555" />
+                                android:hint="555"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/textWind"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/km_h"
-                                android:textStyle="bold"
-                                android:textSize="8sp"/>
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -234,37 +235,41 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="3">
+
                     <LinearLayout
-                        android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:orientation="vertical">
+
                         <TextView
                             android:id="@+id/textForecastFeels"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/feels"
-                            android:textSize="8dp"
                             android:layout_gravity="center"
-                            android:gravity="center"/>
+                            android:gravity="center"
+                            android:text="@string/feels"
+                            android:textSize="8dp" />
 
                         <ImageView
                             android:id="@+id/imgForecastFeels"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/ic_temperature"
-                            android:layout_gravity="center" />
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_temperature" />
+
                         <LinearLayout
-                            android:orientation="horizontal"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
                             <TextView
                                 android:id="@+id/tvForecastFeelsTemp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textStyle="bold"
-                                android:hint="0.0" />
+                                android:hint="0.0"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:id="@+id/texCelcius"
@@ -277,74 +282,78 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textSunrise"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/sunrise"
-                            android:textSize="8dp"
                             android:layout_gravity="center"
-                            android:gravity="center"/>
+                            android:gravity="center"
+                            android:text="@string/sunrise"
+                            android:textSize="8dp" />
 
                         <ImageView
                             android:id="@+id/imgSunrise"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/ic_sunrise"
-                            android:layout_gravity="center" />
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_sunrise" />
+
                         <LinearLayout
-                            android:orientation="horizontal"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
                             <TextView
                                 android:id="@+id/tvSunrise"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textStyle="bold"
-                                android:hint="0.0" />
+                                android:hint="0.0"
+                                android:textStyle="bold" />
                         </LinearLayout>
 
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_weight="1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/textTemp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/sunset"
-                            android:textSize="8dp"
                             android:layout_gravity="center"
-                            android:gravity="center"/>
+                            android:gravity="center"
+                            android:text="@string/sunset"
+                            android:textSize="8dp" />
 
                         <ImageView
                             android:id="@+id/img_main"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
-                            android:src="@drawable/ic_sunset"
-                            android:layout_gravity="center" />
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_sunset" />
+
                         <LinearLayout
-                            android:orientation="horizontal"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
                             <TextView
                                 android:id="@+id/tvSunset"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textStyle="bold"
-                                android:hint="0.0" />
+                                android:hint="0.0"
+                                android:textStyle="bold" />
 
                         </LinearLayout>
 
@@ -355,11 +364,9 @@
                 </LinearLayout>
 
 
-
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
-
 
 
     </LinearLayout>

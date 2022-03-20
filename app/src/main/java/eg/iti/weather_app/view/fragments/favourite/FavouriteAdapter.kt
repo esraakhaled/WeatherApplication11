@@ -11,7 +11,7 @@ import eg.iti.weather_app.utils.dayConverter
 import eg.iti.weather_app.utils.getAddressGeocoder
 import eg.iti.weather_app.utils.setImage
 
-class FavouriteAdapter (var favList: MutableList<FavouriteData>, listener: OnItemClickListener) :
+class FavouriteAdapter(var favList: MutableList<FavouriteData>, listener: OnItemClickListener) :
     RecyclerView.Adapter<FavouriteAdapter.FavViewHolder>() {
     lateinit var context: Context
     private var listenerContact: OnItemClickListener = listener
@@ -37,15 +37,15 @@ class FavouriteAdapter (var favList: MutableList<FavouriteData>, listener: OnIte
     override fun onBindViewHolder(holder: FavViewHolder, position: Int) {
         holder.bind(favList[position], listenerContact)
 
-        var sp= PreferenceManager.getDefaultSharedPreferences(context)
+        var sp = PreferenceManager.getDefaultSharedPreferences(context)
 
         context?.let {
-            holder.view.tvFavAddress.text =getAddressGeocoder( favList[position].lat, favList[position].lon, it)
+            holder.view.tvFavAddress.text =
+                getAddressGeocoder(favList[position].lat, favList[position].lon, it)
             holder.view.textCelcius.text = sp.getString("cel", "")
 //            Glide.with(it).load("http://openweathermap.org/img/w/"+"01d" +".png")
 //                .into(holder.view.imgForecastItem)
         }
-
 
 
     }

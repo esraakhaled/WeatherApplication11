@@ -21,7 +21,8 @@ class DailyAdapter(var daysList: List<Daily>) :
 
         val view = SevenDayCardBinding.inflate(
             LayoutInflater.from(parent.context),
-            parent, false)
+            parent, false
+        )
 
         return DailyViewHolder(view)
     }
@@ -30,9 +31,9 @@ class DailyAdapter(var daysList: List<Daily>) :
         return daysList.size
     }
 
-    fun setData(daily: List<Daily>, context: Context){
-        this.daysList= daily
-        this.context= context
+    fun setData(daily: List<Daily>, context: Context) {
+        this.daysList = daily
+        this.context = context
         notifyDataSetChanged()
     }
 
@@ -42,11 +43,10 @@ class DailyAdapter(var daysList: List<Daily>) :
         sp = PreferenceManager.getDefaultSharedPreferences(context)
         holder.view.textCelcius.text = sp.getString("cel", "")
         holder.view.texCelcius.text = sp.getString("cel", "")
-        holder.view.textWind.text= sp.getString("km","")
+        holder.view.textWind.text = sp.getString("km", "")
 
 
     }
-
 
 
     class DailyViewHolder(var view: SevenDayCardBinding) :

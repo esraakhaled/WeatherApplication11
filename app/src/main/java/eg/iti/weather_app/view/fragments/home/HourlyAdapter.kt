@@ -37,16 +37,6 @@ class HourlyAdapter (var hourList: List<Hourly>) :
     override fun onBindViewHolder(holder: ForecatViewHolder, position: Int) {
 
         holder.bind(hourList[position])
-
-//        if (position % 2 == 0) {
-//            holder.view.cardHourly.setCardBackgroundColor(ContextCompat.getColor(context,
-//                R.drawable.background_cloudly_weather));
-//        } else {
-//            holder.view.cardHourly.setCardBackgroundColor(ContextCompat.getColor(context,
-//                R.drawable.background_rainy_weather));
-//        }
-
-
         val sp = PreferenceManager.getDefaultSharedPreferences(context)
 
         holder.view.textCelcius.text = sp.getString("cel", "")
@@ -72,7 +62,6 @@ class HourlyAdapter (var hourList: List<Hourly>) :
             view.tvForecastFeelsTemp.text = (Math.round(forecast.feelsLike)).toString()
             view.tvVisibility.text = forecast.visibility.toString()
             view.tvMain.text=forecast.feelsLike.toString()
-
             val url = forecast.weather.get(0).icon
             setImage(imageview, url)
 

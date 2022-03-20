@@ -15,7 +15,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.IOException
 
-class FavViewModel (application: Application) : AndroidViewModel(application) {
+class FavViewModel(application: Application) : AndroidViewModel(application) {
 
     var favLiveData = MutableLiveData<Resource<FavouriteData>>()
     val favFromRoomLiveData = MutableLiveData<Resource<List<FavouriteData>>>()

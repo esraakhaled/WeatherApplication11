@@ -18,7 +18,7 @@ interface WeatherDao {
     ////////////////////////////////////////////////////////////
     //Favourite
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertFavWeatherData(fav : FavouriteData)
+    suspend fun insertFavWeatherData(fav: FavouriteData)
 
     @Query("SELECT * FROM favouriteData")
     fun getFavWetherData(): List<FavouriteData>

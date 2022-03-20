@@ -3,15 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/background_cloudly_weather.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_04d.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_09d.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_13d.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_13n.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_50d.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_50n.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_add_alert.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_alarm.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/underline_item_layout.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout-land/fragment_home_weather.xml" value="0.19322916666666667" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout-land/fragment_setting_weather.xml" value="0.19322916666666667" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/activity_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/activity_splash.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/activity_weather.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/alert_item.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/dialog_custom_alarm.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/favourite_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/forecast_weather_hourly_item.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/fragment_alert.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/fragment_favourite_weather.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/fragment_home_weather.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/fragment_maps.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/fragment_setting_weather.xml" value="0.20416666666666666" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/layout/fragment_seven_days_.xml" value="0.14537037037037037" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout/seven_day_card.xml" value="0.20416666666666666" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/menu/bottom_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Weather_app/app/src/main/res/drawable-v24/background_cloudly_weather.xml" value="0.1" />

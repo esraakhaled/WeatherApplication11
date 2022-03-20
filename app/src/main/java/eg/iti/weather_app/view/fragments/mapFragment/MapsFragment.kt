@@ -57,8 +57,10 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
 
         if (mMap != null) {
             val permission = context?.let {
-                ContextCompat.checkSelfPermission(it,
-                    Manifest.permission.ACCESS_FINE_LOCATION)
+                ContextCompat.checkSelfPermission(
+                    it,
+                    Manifest.permission.ACCESS_FINE_LOCATION
+                )
             }
 
             if (permission == PackageManager.PERMISSION_GRANTED) {
@@ -66,7 +68,8 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
             } else {
                 requestPermission(
                     Manifest.permission.ACCESS_FINE_LOCATION,
-                    LOCATION_REQUEST_CODE)
+                    LOCATION_REQUEST_CODE
+                )
             }
         }
 
@@ -94,10 +97,12 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
 
 
             mMap?.moveCamera(CameraUpdateFactory.newLatLngZoom(getcoordinates, 4f))
-            mMap.addMarker(MarkerOptions()
-                .position(getcoordinates)
-                .title(getcoordinates.toString())
-                .snippet("LatLon"))
+            mMap.addMarker(
+                MarkerOptions()
+                    .position(getcoordinates)
+                    .title(getcoordinates.toString())
+                    .snippet("LatLon")
+            )
 
 
         }
@@ -130,8 +135,10 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
                 if (grantResults.isEmpty() || grantResults[0] !=
                     PackageManager.PERMISSION_GRANTED
                 ) {
-                    Toast.makeText(context, R.string.permission.toString(),
-                        Toast.LENGTH_LONG).show()
+                    Toast.makeText(
+                        context, R.string.permission.toString(),
+                        Toast.LENGTH_LONG
+                    ).show()
                 }
             }
         }

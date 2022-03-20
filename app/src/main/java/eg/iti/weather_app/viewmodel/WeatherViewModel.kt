@@ -19,7 +19,7 @@ import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 
-class WeatherViewModel (application: Application) : AndroidViewModel(application) {
+class WeatherViewModel(application: Application) : AndroidViewModel(application) {
 
 
     val weatherLiveData = MutableLiveData<Resource<Weather_Response>>()
@@ -27,7 +27,7 @@ class WeatherViewModel (application: Application) : AndroidViewModel(application
     lateinit var sp: SharedPreferences
     private val newRepo: Repository
     lateinit var context: Context
-    val checkRoom=MutableLiveData<Boolean>()
+    val checkRoom = MutableLiveData<Boolean>()
 
     init {
         newRepo = Repository()
@@ -41,13 +41,11 @@ class WeatherViewModel (application: Application) : AndroidViewModel(application
     val long = sp.getString("lang", "")
 
 
-
-
     fun getWeatherAPIData(
         context: Context, lat: String = lat1.toString(), lon: String = lon1.toString(),
         units: String = temp.toString(), long: String = this.long.toString(),
     ) {
-        this.context=context
+        this.context = context
 
         CoroutineScope(Dispatchers.IO).launch {
             weatherLiveData.postValue(Resource.Loading())
@@ -124,11 +122,9 @@ class WeatherViewModel (application: Application) : AndroidViewModel(application
         return false
     }
 
-
-
-    fun getDateTime(s: String , pattern:String): String? {
+    fun getDateTime(s: String, pattern: String): String? {
         try {
-            val sdf = SimpleDateFormat(pattern , Locale.getDefault())
+            val sdf = SimpleDateFormat(pattern, Locale.getDefault())
             val netDate = java.util.Date(s.toLong() * 1000)
             return sdf.format(netDate)
         } catch (e: Exception) {

@@ -5,9 +5,9 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "alarm_table")
-class AlarmEntity (
+class AlarmEntity(
     @ColumnInfo(name = "request_code")
-    val requestCode:Int,
+    val requestCode: Int,
     @ColumnInfo(name = "main")
     val main: String,
     @ColumnInfo(name = "Date")
@@ -16,7 +16,7 @@ class AlarmEntity (
     val TimeFrom: String,
     @ColumnInfo(name = "TimeTo")
     val TimeTo: String
-    ) {
+) {
     @PrimaryKey(autoGenerate = true)
     var alarm_id: Int = 0
 }

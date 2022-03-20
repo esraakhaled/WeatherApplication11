@@ -1,4 +1,5 @@
 package eg.iti.weather_app.db.entity
+
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
@@ -6,10 +7,11 @@ import eg.iti.weather_app.db.model.Alert
 import eg.iti.weather_app.db.model.Current
 import eg.iti.weather_app.db.model.Daily
 import eg.iti.weather_app.db.model.Hourly
+
 @Entity(tableName = "weatherData")
 data class Weather_Response(
     @PrimaryKey
-    val id : Int,
+    val id: Int,
     @SerializedName("alerts")
     val alerts: List<Alert>?,
     @SerializedName("current")

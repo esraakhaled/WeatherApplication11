@@ -10,13 +10,14 @@ import eg.iti.weather_app.databinding.AlertItemBinding
 import eg.iti.weather_app.db.entity.AlarmEntity
 import kotlinx.android.synthetic.main.alert_item.view.*
 
-class Alarmadabter (val context: Context) : RecyclerView.Adapter<Alarmadabter.ViewHolder>(){
+class Alarmadabter(val context: Context) : RecyclerView.Adapter<Alarmadabter.ViewHolder>() {
     private var alarmList: MutableList<AlarmEntity>
     lateinit var sp: SharedPreferences
+
     init {
 
-        alarmList= ArrayList<AlarmEntity>()
-        sp= PreferenceManager.getDefaultSharedPreferences(context)
+        alarmList = ArrayList<AlarmEntity>()
+        sp = PreferenceManager.getDefaultSharedPreferences(context)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -38,7 +39,6 @@ class Alarmadabter (val context: Context) : RecyclerView.Adapter<Alarmadabter.Vi
     }
 
 
-
     fun getItemByVH(viewHolder: RecyclerView.ViewHolder): AlarmEntity {
         return alarmList.get(viewHolder.adapterPosition)
     }
@@ -51,10 +51,10 @@ class Alarmadabter (val context: Context) : RecyclerView.Adapter<Alarmadabter.Vi
 
     class ViewHolder(itemView: AlertItemBinding) : RecyclerView.ViewHolder(itemView.root) {
 
-        fun bind(alarmEntity: AlarmEntity){
-            itemView.timeFrom.text =alarmEntity.TimeFrom
-            itemView.timeTo.text =alarmEntity.TimeTo
-            itemView.tv_status.text= alarmEntity.main
+        fun bind(alarmEntity: AlarmEntity) {
+            itemView.timeFrom.text = alarmEntity.TimeFrom
+            itemView.timeTo.text = alarmEntity.TimeTo
+            itemView.tv_status.text = alarmEntity.main
 
 
         }
