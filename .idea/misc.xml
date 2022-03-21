@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/background_cloudly_weather.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_01d.xml" value="0.1175" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_04d.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_09d.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_13d.xml" value="0.1015" />
@@ -11,7 +12,10 @@
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_50d.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_50n.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_add_alert.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_add_location.xml" value="0.1175" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_alarm.xml" value="0.1015" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_one_day.xml" value="0.1175" />
+        <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/ic_weatherloc.xml" value="0.1175" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/drawable-v24/underline_item_layout.xml" value="0.1015" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout-land/fragment_home_weather.xml" value="0.19322916666666667" />
         <entry key="..\:/WeatherApplication11/app/src/main/res/layout-land/fragment_setting_weather.xml" value="0.19322916666666667" />

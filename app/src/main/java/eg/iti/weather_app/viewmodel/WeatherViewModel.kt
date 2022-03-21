@@ -31,7 +31,7 @@ class WeatherViewModel(application: Application) : AndroidViewModel(application)
 
     init {
         newRepo = Repository()
-        sp = PreferenceManager.getDefaultSharedPreferences(getApplication())
+       sp = PreferenceManager.getDefaultSharedPreferences(application)
 
     }
 

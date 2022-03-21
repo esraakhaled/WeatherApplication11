@@ -6,6 +6,7 @@ import android.content.SharedPreferences
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.preference.PreferenceManager
+import java.security.AccessController.getContext
 
 class SettingViewModel(application: Application) : AndroidViewModel(application) {
     lateinit var SP: SharedPreferences
@@ -62,7 +63,8 @@ class SettingViewModel(application: Application) : AndroidViewModel(application)
         address: String,
         context: Context,
     ) {
-        SP = PreferenceManager.getDefaultSharedPreferences(context)
+        SP = PreferenceManager.getDefaultSharedPreferences(getApplication())
+
         var editor = SP.edit()
         editor.putString("lat", lat)
         editor.putString("lon", lon)

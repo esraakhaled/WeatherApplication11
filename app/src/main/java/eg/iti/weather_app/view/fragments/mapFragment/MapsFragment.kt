@@ -29,7 +29,7 @@ import eg.iti.weather_app.viewmodel.SettingViewModel
 class MapsFragment : Fragment(R.layout.fragment_maps) {
 
 
-    private lateinit var mMap: GoogleMap
+    private lateinit var map: GoogleMap
     private val LOCATION_REQUEST_CODE = 101
 
     lateinit var model: SettingViewModel
@@ -53,9 +53,9 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
 
     @SuppressLint("MissingPermission")
     private val callback = OnMapReadyCallback { googleMap ->
-        mMap = googleMap
+        map = googleMap
 
-        if (mMap != null) {
+        if (map != null) {
             val permission = context?.let {
                 ContextCompat.checkSelfPermission(
                     it,
@@ -64,7 +64,7 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
             }
 
             if (permission == PackageManager.PERMISSION_GRANTED) {
-                mMap?.isMyLocationEnabled = true
+                map?.isMyLocationEnabled = true
             } else {
                 requestPermission(
                     Manifest.permission.ACCESS_FINE_LOCATION,
@@ -73,14 +73,14 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
             }
         }
 
-        val mapSettings = mMap?.uiSettings
+        val mapSettings = map?.uiSettings
 
         mapSettings?.isZoomControlsEnabled = true
 
         mapSettings?.isZoomGesturesEnabled = true
 
-        mMap.setOnMapClickListener { latLon ->
-            mMap.clear()
+        map.setOnMapClickListener { latLon ->
+            map.clear()
 
             var getcoordinates = LatLng(latLon.latitude, latLon.longitude)
             context?.let {
@@ -96,8 +96,8 @@ class MapsFragment : Fragment(R.layout.fragment_maps) {
 
 
 
-            mMap?.moveCamera(CameraUpdateFactory.newLatLngZoom(getcoordinates, 4f))
-            mMap.addMarker(
+            map?.moveCamera(CameraUpdateFactory.newLatLngZoom(getcoordinates, 4f))
+            map.addMarker(
                 MarkerOptions()
                     .position(getcoordinates)
                     .title(getcoordinates.toString())
