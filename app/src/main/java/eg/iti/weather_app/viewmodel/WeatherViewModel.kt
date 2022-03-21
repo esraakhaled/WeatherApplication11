@@ -31,12 +31,13 @@ class WeatherViewModel(application: Application) : AndroidViewModel(application)
 
     init {
         newRepo = Repository()
-       sp = PreferenceManager.getDefaultSharedPreferences(application)
+      // sp = PreferenceManager.getDefaultSharedPreferences(application)
+        sp=application.getSharedPreferences("loc",Context.MODE_PRIVATE)
 
     }
 
-    val lat1 = sp.getString("lat", "")
-    val lon1 = sp.getString("lon", "")
+    val lat1 = sp.getString("lat", "16.56917614825429")
+    val lon1 = sp.getString("lon", "30.50253387540579")
     val temp = sp.getString("temp", "")
     val long = sp.getString("lang", "")
 

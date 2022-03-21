@@ -8,8 +8,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.preference.PreferenceManager
 import java.security.AccessController.getContext
 
-class SettingViewModel(application: Application) : AndroidViewModel(application) {
-    lateinit var SP: SharedPreferences
+class SettingViewModel( val app: Application) : AndroidViewModel(app) {
+     lateinit var SP: SharedPreferences
     val addressLiveData = MutableLiveData<String?>()
     val latLiveData = MutableLiveData<Double>()
     val lonLiveData = MutableLiveData<Double>()
@@ -63,8 +63,8 @@ class SettingViewModel(application: Application) : AndroidViewModel(application)
         address: String,
         context: Context,
     ) {
-        SP = PreferenceManager.getDefaultSharedPreferences(getApplication())
-
+       // SP = PreferenceManager.getDefaultSharedPreferences(getApplication())
+    SP=app.getSharedPreferences("loc",Context.MODE_PRIVATE)
         var editor = SP.edit()
         editor.putString("lat", lat)
         editor.putString("lon", lon)
